@@ -1,0 +1,142 @@
+.mainBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+audio {
+    display: block;
+    width: 94%;
+}
+
+.lyricsBox {
+    height: 72%;
+    width: 95%;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    line-height: 40px;
+    text-align: center;
+    position: relative;
+}
+
+.lyricsBox>div {
+    width: 100%;
+    height: 100%;
+    padding: 0 1%;
+    mask-image: linear-gradient(to bottom,transparent,black 15%,black 85%,transparent);
+    overflow: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.lyricsBox>div::-webkit-scrollbar {
+    display: none; 
+}
+
+.lyricsBox p {
+    position: relative;
+    cursor: pointer;
+}
+
+.lyricsBox p:hover {
+    background-color: rgba(255, 255, 255, 0.098);
+    width: 98%;
+}
+
+.lyricsBox .center {
+    position: sticky;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: opacity 0.5s ease;
+    color: rgba(255, 255, 255, 0.587);
+}
+
+.lyricsBox .time {
+    text-align: left;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.lyricsBox .indicator {
+    left: 8.5%;
+    width: 86%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.468);
+    pointer-events: none;
+    z-index: 10;
+}
+
+.lyricsBox .fa-play {
+    left: 96%;
+}
+
+.lyricsBox .beforeBlank {
+    height: 30%; 
+}
+
+.lyricsBox .afterBlank {
+    height: 50%;
+}
+
+@keyframes rainbow {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: 100% 0%;
+    }
+}
+
+.lyrics>.active {
+    font-size: 22px;
+    animation: rainbow 3.5s linear infinite;
+}
+
+.buttonBox {
+    height: 23px;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+
+.buttonBox>div {
+    height: 100%;
+    aspect-ratio: 1/1;
+    position: relative;
+}
+
+.buttonBox i {
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.buttonBox .fa-rotate {
+    font-size: 23px;
+}
+
+.buttonBox .fa-shuffle {
+    font-size: 20px;
+}
+
+.buttonBox .fa-1 {
+    position: absolute;
+    left: 9px;
+    top: 6px;
+    font-size: 12px;
+}
+
+.buttonBox .fa-play {
+    position: relative;
+    font-size: 21px;
+    left: 1.5px;
+}
+
+.buttonBox .fa-pause {
+    font-size: 25px;
+}

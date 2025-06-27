@@ -1,0 +1,95 @@
+.search {
+    width: 80%;
+    height: 5%;
+    position: relative;
+}
+
+.search>.fa-magnifying-glass {
+    position: absolute;
+    top: 16px;
+    left: 10px;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.search>input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: block;
+    padding-left: 40px;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
+
+.search>input:focus {
+    outline: none;
+    background-color: white;
+}
+
+.search>input:focus:placeholder-shown::placeholder {
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.search>input:not(:focus)::placeholder,
+.search>input:not(:placeholder-shown)::placeholder {
+    color: transparent;
+}
+
+.list {
+    width: 85%;
+    height: 80%;
+    overflow-y: auto;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    -ms-overflow-style: none;
+}
+
+.list::-webkit-scrollbar {
+    display: none;
+}
+
+.list>.song {
+    width: 100%;
+    height: 20%;
+    color: white;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.list>.song:hover {
+    background-color: rgba(255, 255, 255, 0.1); 
+}
+
+.list>.song>img {
+    height: 75%;
+    object-fit: cover;
+    margin: 0 5%;
+}
+
+.list>.song>p {
+    width: 48%;
+    cursor: pointer;
+}
+
+.list>.song>i {
+    margin: 2%;
+    transition: all 0.2s ease-in-out;
+}
+
+.list>.song>i:hover {
+    transform: translateY(-3px);
+}
+
+.list span {
+    font-size: 18px;
+}
+
+.list .fa-pause{
+    font-size: 22px;
+}

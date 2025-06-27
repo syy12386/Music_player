@@ -1,0 +1,135 @@
+.colorChoose {
+    padding: 0 5%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.colorChoose>div {
+    height: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.colorChoose>.text {
+    font-size: 18px;
+}
+
+.colorChoose>.color>div{
+    width: 45%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.colorChoose>.blue>div{
+    background-color: #66a3f4;
+}
+
+.colorChoose>.green>div{
+    background-color: #89b566;
+}
+
+.colorChoose>.purple>div{
+    background-color: #9270CA;
+}
+
+.colorChoose>.red>div{
+    background-color: #E6450F;
+}
+
+.colorChoose>.pink>div{
+    background-color: #ff99b1;
+}
+
+.colorChoose>.orange>div{
+    background-color: #FF963E;
+}
+
+.bg.blue{
+    background-image: linear-gradient(45deg, #66a3f4, #accbee, #e7f0fd);
+}
+
+.bg.green{
+    background-image: linear-gradient(45deg, #80a860, #abc88b, #e3fec7);
+}
+
+.bg.purple{
+    background-image: linear-gradient(45deg, #9270CA, #c6b1f0, #f0e1ff); 
+}
+
+.bg.red{
+    background-image: linear-gradient(45deg, #E6450F, #f0a88b, #ffeae1); 
+}
+
+.bg.pink{
+    background-image: linear-gradient(45deg, #ff99b1, #ffc3d8, #ffebef); 
+}
+
+.bg.orange{
+    background-image: linear-gradient(45deg, #FF963E, #FFC396, #ffebdc); 
+}
+
+.lyrics>.blue {
+    background: linear-gradient(to left,
+            white,#e7f0fd,#accbee,#75aef8,
+            white,#e7f0fd,#accbee,#75aef8,
+            white);
+    color: transparent;
+    background-size: 200% auto;
+    background-clip: text;
+}
+
+.lyrics>.green {
+    background: linear-gradient(to left,
+            white,#e3fec7,#abc88b,#80a860,
+            white,#e3fec7,#abc88b,#80a860,
+            white); 
+    color: transparent;
+    background-size: 200% auto;
+    background-clip: text;
+}
+
+.lyrics>.purple {
+    background: linear-gradient(to left,
+            white,#f0e1ff,#c6b1f0,#9270CA,
+            white,#f0e1ff,#c6b1f0,#9270CA,
+            white);
+    color: transparent;
+    background-size: 200% auto; 
+    background-clip: text;
+}
+
+.lyrics>.red {
+    background: linear-gradient(to left,
+            white,#ffeae1,#f0a88b,#E6450F,
+            white,#ffeae1,#f0a88b,#E6450F,
+            white); 
+    color: transparent;
+    background-size: 200% auto; 
+    background-clip: text;
+}
+
+.lyrics>.pink {
+    background: linear-gradient(to left,
+            white,#ffebef,#ffc3d8,#ff99b1,
+            white,#ffebef,#ffc3d8,#ff99b1,
+            white); 
+    color: transparent;
+    background-size: 200% auto;
+    background-clip: text;
+}
+
+.lyrics>.orange {
+    background: linear-gradient(to left,
+            white,#ffebdc,#FFC396,#FF963E,
+            white,#ffebdc,#FFC396,#FF963E,
+            white); 
+    color: transparent;
+    background-size: 200% auto;
+    background-clip: text;
+}
