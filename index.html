@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>歌曲播放器</title>
+    <link rel="stylesheet" href="fontawesome-free-6.7.2-web/css/fontawesome.css">
+    <link rel="stylesheet" href="fontawesome-free-6.7.2-web/css/regular.css">
+    <link rel="stylesheet" href="fontawesome-free-6.7.2-web/css/solid.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/cover.css">
+    <link rel="stylesheet" href="css/lyric.css">
+    <link rel="stylesheet" href="css/list.css">
+    <link rel="stylesheet" href="css/color.css">
+</head>
+
+<body>
+    <div class="bg">
+        <div class="zone top">
+            <div class="box cover">
+                <div class="box coverImg">
+                    <img src="" alt="" class="paused">
+                </div>
+                <div class="text"></div>
+            </div>
+            <div class="box mainBox">
+                <audio controls></audio>
+                <div class="lyricsBox">
+                    <div>
+                        <div class="beforeBlank"></div>
+                        <div class="center time hidden"></div>
+                        <div class="center indicator hidden"></div>
+                        <i class="center fa-solid fa-play fa-sm hidden"></i>
+                        <div class="lyrics"></div>
+                        <div class="afterBlank"></div>
+                    </div>
+                </div>
+                <div class="buttonBox">
+                    <div>
+                        <i class="fa-solid fa-rotate fa-lg"></i>
+                        <i class="fa-solid fa-shuffle none"></i>
+                        <i class="fa-solid fa-1 none"></i>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-backward-step fa-xl"></i>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-play fa-xl"></i>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-forward-step fa-xl"></i>
+                    </div>
+                    <div>
+                        <i class="fa-regular fa-heart fa-lg"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="box listBox">
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+                    <input type="text" placeholder="请输入你想搜索的歌曲的歌名或歌手">
+                </div>
+                <div class="list">
+                </div>
+            </div>
+        </div>
+        <div class="zone bottom">
+            <div class="box colorChoose">
+                <div class="text">主题色<br>选择</div>
+                <div class="color blue">
+                    <div></div>
+                    <p class="text">blue</p>
+                </div>
+                <div class="color green">
+                    <div></div>
+                    <p class="text">green</p>
+                </div>
+                <div class="color purple">
+                    <div></div>
+                    <p class="text">purple</p>
+                </div>
+                <div class="color red">
+                    <div></div>
+                    <p class="text">red</p>
+                </div>
+                <div class="color pink">
+                    <div></div>
+                    <p class="text">pink</p>
+                </div>
+                <div class="color orange">
+                    <div></div>
+                    <p class="text">orange</p>
+                </div>
+            </div>
+        </div>
+        <div class="text completeTime">制作于<br>2025.6.27</div>
+        <div class="text watermark"></div>
+    </div>
+    <script src="js/data.js"></script>
+    <script src="js/player.js" defer></script>
+</body>
+
+</html>
